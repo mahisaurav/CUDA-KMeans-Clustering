@@ -1,0 +1,7 @@
+build/
+.venv/
+dataset/
+output/
+results/
+*.zip
+__pycache__/
