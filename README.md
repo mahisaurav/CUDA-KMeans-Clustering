@@ -14,10 +14,10 @@ Use Bash, GNU Make, a C++17 compiler supported by your CUDA toolkit, and Python 
 python3 -m venv .venv
 source .venv/bin/activate
 python3 -m pip install -r requirements.txt
-./run.sh gpu
+bash run.sh gpu
 ```
 
-The CPU-only workflow uses the same dependencies and runs with `./run.sh cpu`. For a build only, use `make cpu` or `make cuda`.
+The CPU-only workflow uses the same dependencies and runs with `bash run.sh cpu`. For a build only, use `make cpu` or `make cuda`.
 
 ## Command-line interface
 
@@ -53,4 +53,4 @@ These are the CPU and GPU medians from the same Google Colab session using CUDA 
 
 All five runs had zero label disagreements. The maximum centroid difference across the suite was 2.45e-13 and the reported inertia matched at every size. The T4 was slower at 10,000 points and faster at every larger tested size. These medians describe one Colab session and can vary with runtime load.
 
-The accompanying proof-gpu.zip contains the locally packaged Colab evidence. The Colab export cell also offers the original runtime archive. Proof-cpu.zip contains a separate CPU-only run. The repository includes the source and benchmark evidence.
+The accompanying proof-gpu.zip contains the locally packaged Colab evidence. The Colab export cell also offers the original runtime archive. The repository includes the source and benchmark evidence.
